@@ -113,7 +113,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t session17-python:${{ github.sha }} .
+          docker build -t piyush6805/python-web-app:${{ github.sha }} .
 
 
   # ========================================
@@ -133,7 +133,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t session17-python:${{ github.sha }} .
+          docker build -t piyush6805/python-web-app:${{ github.sha }} .
 
       - name: Install Trivy
         run: |
@@ -173,14 +173,14 @@ jobs:
       - name: Build and tag image
         run: |
           docker build \
-            -t nensiravaliya28/hey-cicd:${{ github.sha }} \
-            -t nensiravaliya28/hey-cicd:latest \
+            -t piyush6805/python-web-app:${{ github.sha }} \
+            -t piyush6805/python-web-app:latest \
             .
 
       - name: Push image
         run: |
-          docker push nensiravaliya28/hey-cicd:${{ github.sha }}
-          docker push nensiravaliya28/hey-cicd:latest
+          docker push piyush6805/python-web-app:${{ github.sha }}
+          docker push piyush6805/python-web-app:latest
 
 
   # ========================================
