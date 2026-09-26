@@ -133,7 +133,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t piyush6805/python-web-app:${{ github.sha }} .
+          docker build -t session17-python:${{ github.sha }} .
 
       - name: Install Trivy
         run: |
